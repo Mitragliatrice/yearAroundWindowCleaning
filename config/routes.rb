@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, except: [:sign_up]
   resources :quotes, except: [:show]
   get 'quotes/:id', to: 'quotes#show', as: 'quote_show'
 

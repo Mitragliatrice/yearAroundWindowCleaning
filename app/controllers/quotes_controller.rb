@@ -1,5 +1,6 @@
 class QuotesController < ApplicationController
 before_action :set_quote, only: [:edit, :show, :update, :destroy]
+              :authenticate_user!
 
   def index
     @quotes = Quote.all
@@ -53,9 +54,9 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
   end
 
   def quote_params
-    params.require(:quote).permit(:name, 
-                                  :city, 
-                                  :phone, 
+    params.require(:quote).permit(:name,
+                                  :city,
+                                  :phone,
                                   :email,
                                   :body,
                                 )
