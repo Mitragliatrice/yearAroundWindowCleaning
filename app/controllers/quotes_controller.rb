@@ -1,6 +1,7 @@
 class QuotesController < ApplicationController
 before_action :set_quote, only: [:edit, :show, :update, :destroy]
               :authenticate_user!
+              access all: [:new, :create],  admin: :all
 
   def index
     @quotes = Quote.all
@@ -22,7 +23,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
 
         respond_to do |format|
       if @quotes.save
-        format.html { redirect_to quotes_path, notice: 'Quote was successfully submitted.' }
+        format.html { redirect_to root_path, notice: 'Quote was successfully submitted.' }
       else
         format.html { render :new }
       end
