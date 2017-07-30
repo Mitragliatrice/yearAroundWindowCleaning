@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
 before_action :set_quote, only: [:edit, :show, :update, :destroy]
               :authenticate_user!
-              access all: [:new, :create],  admin: :all
+              access all: [:new, :create],  site_admin: :all
 
   def index
     @quotes = Quote.all
