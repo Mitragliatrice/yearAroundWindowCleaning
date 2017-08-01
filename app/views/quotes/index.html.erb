@@ -1,10 +1,10 @@
 <h1 style="margin-top: 2em;">Requests</h1>
 
-<p><%= link_to "New Request", new_quote_path %></p>
+<%= paginate @quotes %>
 
 <%= render @quotes.reverse %>
 
-
+<%= paginate @quotes %>
 
 
 

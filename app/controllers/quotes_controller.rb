@@ -4,7 +4,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
               access all: [:new, :create],  site_admin: :all
 
   def index
-    @quotes = Quote.all
+    @quotes = Quote.page(params[:page]).per(5)
     @fixed_pos = "fixed-pos"
   end
 

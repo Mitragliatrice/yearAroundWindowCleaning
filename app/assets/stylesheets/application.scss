@@ -238,3 +238,12 @@ position: static;
 #small {
   margin-bottom: 0px;
 }
+
+.pagination {
+  justify-content: center;
+}
+
+
+.pagination > li {
+  margin-right: 10px;
+}
