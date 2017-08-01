@@ -1,8 +1,8 @@
-<h1>I'm the Index</h1>
+<h1 style="margin-top: 2em;">Requests</h1>
 
-<p><%= link_to "New Quote", new_quote_path %></p>
+<p><%= link_to "New Request", new_quote_path %></p>
 
-<%= render partial: 'quotes', collection: @quotes %>
+<%= render @quotes.reverse %>
 
 
 

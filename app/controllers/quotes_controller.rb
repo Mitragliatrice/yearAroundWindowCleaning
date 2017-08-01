@@ -5,6 +5,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
 
   def index
     @quotes = Quote.all
+    @fixed_pos = "fixed-pos"
   end
 
   def show

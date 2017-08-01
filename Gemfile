@@ -63,3 +63,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.9.9'
 
+gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopyrightGenerator'
+# For Pagination
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
