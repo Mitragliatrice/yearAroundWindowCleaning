@@ -4,7 +4,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
               access all: [:new, :create],  site_admin: :all
 
   def index
-    @quotes = Quote.page(params[:page]).per(5)
+    @quotes = Quote.order('created_at DESC').page(params[:page]).per(5)
     @fixed_pos = "fixed-pos"
   end
 
@@ -24,7 +24,8 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
 
         respond_to do |format|
       if @quotes.save
-        format.html { redirect_to root_path, notice: 'Quote was successfully submitted.' }
+            ModelMailer.new_request_notification(@quotes).deliver
+        format.html { redirect_to root_path, alert: 'Quote was successfully submitted.' }
       else
         format.html { render :new }
       end

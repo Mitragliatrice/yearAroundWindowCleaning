@@ -1,0 +1,22 @@
+<h1>New Quote Request</h1>
+<div>
+<h3>
+  Someone has requested a quote from your website.
+</h3>
+</div>
+
+<div class="mailer">
+<h4><a href="">click here to go check it out.</a></h4>
+<hr>
+
+<p><b>Name:</b> <%= @quotes.name %></p>
+<p><b>Phone:</b> <%= @quotes.phone(&:number_to_phone) %></p>
+<p><b>Email:</b> <%= @quotes.email %></p>
+<p><b>City:</b> <%= @quotes.city %></p>
+
+<p><b>Comments:</b> <%= @quotes.body %></p>
+<p><b>Requested at:</b> <%= @quotes.created_at %></p>
+
+</div>
+
+
