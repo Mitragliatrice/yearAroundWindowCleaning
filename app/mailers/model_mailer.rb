@@ -10,4 +10,5 @@ default from: "mathews.colton@gmail.com"
 
     mail to: "mathews.colton@gmail.com", subject: "New Quote Request Received!"
   end
+
 end
