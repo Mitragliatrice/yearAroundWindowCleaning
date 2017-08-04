@@ -66,3 +66,5 @@ gem 'popper_js', '~> 1.9.9'
 gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopyrightGenerator'
 # For Pagination
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+# Secret Keeper
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
