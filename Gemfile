@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-require "dotenv-rails"
 # Tether for bootstrap components
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
