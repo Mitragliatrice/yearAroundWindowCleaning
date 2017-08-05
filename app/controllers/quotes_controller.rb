@@ -24,7 +24,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
 
         respond_to do |format|
       if @quotes.save
-            ModelMailer.new_request_notification(@quotes).deliver_later
+            ModelMailer.new_request_notification(@quotes).deliver
         format.html { redirect_to root_path, alert: 'Quote was successfully submitted.' }
       else
         format.html { render :new }
