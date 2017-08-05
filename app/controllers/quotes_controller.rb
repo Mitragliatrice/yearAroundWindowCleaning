@@ -15,7 +15,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
     @quotes.destroy
 
         respond_to do |format|
-      format.html { redirect_to root_path, notice: 'Record was removed.' }
+      format.html { redirect_to quotes_path, notice: 'Record was removed.' }
     end
   end
 
