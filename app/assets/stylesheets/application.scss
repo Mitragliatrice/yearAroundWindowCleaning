@@ -81,7 +81,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgba(225,233,234,1);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -129,6 +129,7 @@ body {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  justify-content: center;
 }
 
 
@@ -191,6 +192,7 @@ body {
 .card {
   margin-top: 60px;
   border: none;
+  margin-left: 15em;
 
 }
 
@@ -286,4 +288,8 @@ width: 100%;
 }
 .contact:hover {
   font-size: 1.2em;
+}
+
+.lead {
+  font-weight: 500;
 }
