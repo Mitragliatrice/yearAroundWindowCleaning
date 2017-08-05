@@ -67,4 +67,4 @@ gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopy
 # For Pagination
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 # Secret Keeper
-gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', require: 'dotenv/rails-now'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
