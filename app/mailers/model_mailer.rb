@@ -1,5 +1,5 @@
 class ModelMailer < ApplicationMailer
-default from: "mathews.colton@gmail.com"
+default from: "yearroundwindow@gmail.com"
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -8,7 +8,7 @@ default from: "mathews.colton@gmail.com"
   def new_request_notification quote
     @quotes = quote
 
-    mail to: "mathews.colton@gmail.com", subject: "New Quote Request Received!"
+    mail to: "mathews.colton@gmail.com; sheeshalyn@gmail.com", subject: "New Quote Request Received!"
   end
 
 end
