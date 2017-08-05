@@ -1,4 +1,5 @@
 Rails.application.configure do
+  require 'dotenv/load'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -70,7 +71,7 @@ config.action_mailer.perform_deliveries = true
   :address => "smtp.mailgun.org",
   :port => 587,
   :domain => "sandbox7a2e4fa609ce48aaa39a7b621f0f0089.mailgun.org",
-  :user_name => 'postmaster@sandbox7a2e4fa609ce48aaa39a7b621f0f0089.mailgun.org',
+  :user_name => ENV.fetch('MAILGUN_LOGIN'),
   :password => ENV.fetch('MAILGUN_PASSWORD'),
   :authentication => "plain",
   :enable_starttls_auto => true
