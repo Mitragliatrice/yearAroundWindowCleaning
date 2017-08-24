@@ -68,3 +68,5 @@ gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopy
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 # Secret Keeper
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+# Text Message Service
+gem 'twilio-ruby', '~> 5.1', '>= 5.1.2'

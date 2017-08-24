@@ -52,9 +52,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
 
   private
 
-  def set_quote
-    @quotes = Quote.find(params[:id])
-  end
+
 
   def quote_params
     params.require(:quote).permit(:name,

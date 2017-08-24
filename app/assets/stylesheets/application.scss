@@ -276,6 +276,7 @@ width: 100%;
   width: 100%;
   margin-top: 5em;
   border-radius: 20px;
+  z-index: -5;
 
 
 }
@@ -290,7 +291,7 @@ width: 100%;
   word-spacing: 7px;
 }
 .contact:hover {
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
 .lead {
