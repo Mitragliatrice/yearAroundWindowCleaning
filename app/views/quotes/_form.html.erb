@@ -3,6 +3,7 @@
 
 
 <%= form_with(model: @quotes, local: true) do |f| %>
+<%= f.invisible_captcha :subtitle %>
 <div class="row">
 <div class="col-md-7">
   <div class="form-group">

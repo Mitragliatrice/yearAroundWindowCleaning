@@ -2,7 +2,7 @@ class QuotesController < ApplicationController
 before_action :set_quote, only: [:edit, :show, :update, :destroy]
               :authenticate_user!
               access all: [:new, :create],  site_admin: :all
-
+invisible_captcha only: [:create, :update], honeypot: :subtitle
   def index
     @quotes = Quote.order('created_at DESC').page(params[:page]).per(5)
     @fixed_pos = "fixed-pos"
@@ -22,10 +22,15 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
   def create
     @quotes = Quote.new(quote_params)
 
-        respond_to do |format|
+      respond_to do |format|
       if @quotes.save
-            SmsTool.send_sms(name: @quotes.name, phone: @quotes.phone, email: @quotes.email, city: @quotes.city, comments:@quotes.body)
-        format.html { redirect_to root_path, alert: 'Quote was successfully submitted.' }
+          SmsTool.send_sms( name: @quotes.name, 
+                         phoneto: "8016027706", 
+                     clientphone: @quotes.phone, 
+                           email: @quotes.email, 
+                            city: @quotes.city, 
+                        comments: @quotes.body)
+          format.html { redirect_to root_path, notice: 'Quote was successfully sent.' }
       else
         format.html { render :new }
       end
@@ -33,7 +38,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
   end
 
   def update
-         respond_to do |format|
+        respond_to do |format|
       if @quotes.update(quote_params)
         format.html { redirect_to quotes_url, notice: 'Quote was successfully posted.' }
       else
@@ -60,6 +65,7 @@ before_action :set_quote, only: [:edit, :show, :update, :destroy]
                                   :phone,
                                   :email,
                                   :body,
+                                  :subtitle,
                                 )
   end
 

@@ -70,3 +70,5 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 # Text Message Service
 gem 'twilio-ruby', '~> 5.1', '>= 5.1.2'
+# Catching the bot-flies
+gem 'invisible_captcha', '~> 0.9.3'

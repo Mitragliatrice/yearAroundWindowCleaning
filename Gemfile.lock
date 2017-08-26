@@ -81,6 +81,8 @@ GEM
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
+    invisible_captcha (0.9.3)
+      rails (>= 3.2.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -220,6 +222,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   dotenv-rails (~> 2.2, >= 2.2.1)
+  invisible_captcha (~> 0.9.3)
   jbuilder (~> 2.5)
   jquery-rails
   kaminari (~> 1.0, >= 1.0.1)
@@ -243,4 +246,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
