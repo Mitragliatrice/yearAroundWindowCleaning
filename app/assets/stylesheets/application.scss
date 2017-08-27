@@ -42,7 +42,6 @@ color: white;
 }
 
 
-
 // Home Page
 .home-pic {
   width: 100%;
@@ -95,3 +94,15 @@ color: white;
 
 
 // Responsiveness for Mobile
+@media (max-width: 460px) {
+
+.masthead-brand {
+  transform: scale(0.9);  
+  word-wrap: nowrap;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+
+
+}
