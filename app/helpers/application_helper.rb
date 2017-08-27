@@ -4,7 +4,7 @@ module ApplicationHelper
     if user_signed_in?
       (link_to "Quotes", quotes_path, class: "nav-link #{active? quotes_path}") +
       " ".html_safe +
-      (link_to "#{current_user.name} - Log Out", destroy_user_session_path, method: :delete, class: style)
+      (link_to "#{current_user.name} - Log Out", destroy_user_session_path, method: :delete, class: "nav-link")
     end
   end
 

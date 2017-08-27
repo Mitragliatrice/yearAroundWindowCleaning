@@ -2,14 +2,17 @@
 <div class="masthead clearfix" id="<%= @fixed_pos %>">
   <div class="inner">
     <h2 class="masthead-brand">Year Round Window Cleaning</h2>
-    <div class="nav-class" >
-      <nav class="nav nav-masthead">
-
+    <div class="nav" >
+      <nav class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
           <%= link_to "Home", root_path, class: "nav-link #{active? root_path}" %>
+          <li class="nav-item">
           <%= link_to "About Me", about_me_path, class: "nav-link #{active? about_me_path}" %>
-          <%= link_to "Request a Quote", new_quote_path, class: "nav-link #{active? new_quote_path}" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Request a Quote", new_quote_path, class: "nav-link #{active? new_quote_path}" %>
+          </li>
           <%= login_helper("nav-link") %>
-
       </nav>
     </div>
   </div>

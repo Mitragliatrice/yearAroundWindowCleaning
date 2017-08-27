@@ -1,1 +1,93 @@
 @import "bootstrap";
+
+// Global
+.card {
+  width: 100%;
+  min-height: 500px;
+  min-width: 1110px;
+}
+
+body {
+  background-image: url("bubble_bg.jpg");
+  background-color: white;
+  z-index: -100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+  height: 100%; 
+}
+
+.cust-foot {
+  text-align: center;
+}
+
+
+
+// Navbar
+.nav-link {
+padding-bottom: 20px;
+color: white;
+}
+
+.active {
+  color: black;
+}
+
+.masthead-brand {
+  color: white;
+}
+
+
+
+// Home Page
+.home-pic {
+  border-radius: 5px;
+  margin: 15px 5px 15px 25px;
+
+}
+
+.request-quote{
+  padding: 0px;
+  margin-left: 300px;
+  margin-top: -100px;
+}
+
+.contact {
+  padding: 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.car-cust {
+  margin: 25px;
+}
+
+.carousel-item em{
+  width: 100%;
+  text-align: center;
+}
+
+.carousel {
+  border: solid 0.5px;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+// About Me Page
+
+.about-pic {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+// Request a Quote Page
+
+
+
+// Quotes Index Page
+
+
+
+// Responsiveness for Mobile

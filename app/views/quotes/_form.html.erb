@@ -1,44 +1,38 @@
 <div class="card text-center" style="width: 40rem;">
   <div class="card-block">
+  <h3 class="card-title"> Request a Quote </h3>
+  <%= form_with(model: @quotes, local: true) do |f| %>
+  <%= f.invisible_captcha :subtitle %>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.telephone_field :phone, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.text_field :email, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :city %>
+          <%= f.text_field :city, class: "form-control" %>
+        </div>
+      </div>
 
-
-<%= form_with(model: @quotes, local: true) do |f| %>
-<%= f.invisible_captcha :subtitle %>
-<div class="row">
-<div class="col-md-7">
-  <div class="form-group">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control" %>
+      <div class="col-md-5">
+        <div class="form-group">
+          <%= f.label :Comments %>
+          <%= f.text_area :body, class: "form-control", rows: 14 %>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit "Request Quote", class: "btn btn-warning btn-block" %>
+    </div>
+    <% end %>
   </div>
-
- <div class="form-group">
-    <%= f.label :phone %>
-    <%= f.telephone_field :phone, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :email %>
-    <%= f.text_field :email, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :city %>
-    <%= f.text_field :city, class: "form-control" %>
-  </div>
-  </div>
-
-  <div class="col-md-5">
-  <div class="form-group">
-    <%= f.label :Comments %>
-    <%= f.text_area :body, class: "form-control", rows: 14 %>
-  </div>
-  </div>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Request Quote", class: "btn btn-primary btn-block" %>
-  </div>
-
-  <% end %>
-  </div>
-  </div>
+</div>
