@@ -7,14 +7,20 @@
   min-width: 1110px;
 }
 
-body {
-  background-image: url("bubble_bg.jpg");
-  background-color: white;
-  z-index: -100;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;   
-  height: 100%; 
+#background {
+    display: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -101;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-color: black; 
 }
 
 .cust-foot {
