@@ -11,6 +11,8 @@ body {
 
 .card {
   width: 100%;
+  border-top-left-radius: 0px;
+  border-top: none;
 }
 
 #background {
@@ -33,12 +35,14 @@ body {
   text-align: center;
 }
 
-
-
 // Navbar
 .nav-link {
-padding-bottom: 20px;
 color: white;
+
+}
+
+.nav-tabs {
+  border: none;
 }
 
 .active {
@@ -121,6 +125,14 @@ color: white;
   text-align: center;
 }
 
+}
 
 
+@media (max-width: 300px) {
+#background {
+    display: none;
+}
+body {
+  background-color: rgb(65, 150, 197)
+}
 }
