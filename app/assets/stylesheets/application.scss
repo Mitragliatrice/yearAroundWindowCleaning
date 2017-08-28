@@ -1,6 +1,14 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Fjalla+One|Kavivanar');
+
+
 
 // Global
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
 .card {
   width: 100%;
 }
@@ -39,6 +47,15 @@ color: white;
 
 .masthead-brand {
   color: white;
+  font-size: 3em;
+}
+
+.masthead span{
+  font-family: 'Kavivanar', cursive;
+  font-weight: bolder;
+  border-bottom: solid 2px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 
