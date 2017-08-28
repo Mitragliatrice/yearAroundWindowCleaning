@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Fjalla+One|Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Kavivanar');
 
 
 
@@ -125,13 +125,10 @@ color: white;
   text-align: center;
 }
 
-}
-
-
-@media (max-width: 300px) {
 #background {
     display: none;
 }
+
 body {
   background-color: rgb(65, 150, 197)
 }
