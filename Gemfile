@@ -72,3 +72,5 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'twilio-ruby', '~> 5.1', '>= 5.1.2'
 # Catching the bot-flies
 gem 'invisible_captcha', '~> 0.9.3'
+
+gem 'newrelic_rpm'
